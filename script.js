@@ -122,9 +122,6 @@ let posts=[
 ]   
 
 
-
-// let storyImage = document.querySelector(".story-profile-img");
-// let storyName = document.querySelector(".story-profile-name");
 let storyBar = document.querySelector(".stories-bar");
 
 let stories = [];
@@ -155,3 +152,55 @@ posts.forEach(post => {
 //     story.innerHTML=`<img ${e.image}>`
 // })
 
+
+
+
+
+
+let userImage = document.querySelector(".user-img") // should insert user profile image  
+let userInfo = document.querySelector(".user-info") // should add two div's .user-name and .user-loc
+
+let postsElement = document.querySelector(".posts")
+let postElementList = []
+
+posts.map(post => {
+    let postElement = `<div class="post">
+                            <div class="user">
+                                <div class="user-img">
+                                    <img src="${post.user.image}" alt=""></img>
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">${post.user.name}</div>
+                                    <div class="user-loc"></div>
+                                </div>
+                                <i class="ri-more-2-line"></i>
+                            </div>
+
+                            <div class="media">
+                                <img src="${post.image}" alt="">
+                            </div>
+
+                            <div class="reaction-block">
+                                <i class="ri-heart-3-line"></i>
+                                <i class="ri-chat-3-line"></i>
+                                <i class="ri-send-plane-fill"></i>
+                                <div class="bookmark">
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+
+                            <div class="reaction-info">
+                                <button class="view-likes-btn">${post.likes} likes</button>
+                                <div class="caption">
+                                    <p><b>${post.user.name}</b> ${post.caption} </p>
+                                </div>
+
+                                <p class="hashtags">${post.hashtags}</p>
+
+                                <button class="view-comments-btn">view all ${post.comments} comments</button>
+                            </div>
+                        </div>`
+    postElementList.push(postElement);
+});
+
+postsElement.innerHTML = postElementList.slice(",")

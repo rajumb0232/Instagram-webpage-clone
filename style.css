@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #ececec;
     overflow: hidden;
 }
 
@@ -23,28 +23,36 @@ body {
 
 /* * Screen CSS*/
 
-.screen {
-    border-left: 1px solid #d1d1d1;
-    border-right: 1px solid #d1d1d1;
+.top-template{
     border-radius: 10px;
-    width: 35vw;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden ;
+    width: 30vw; 
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px rgb(120, 120, 120);
 }
 
-.screen::-webkit-scrollbar {
+.screen, .top-template {
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+
+.screen{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+
+.screen::-webkit-scrollbar, .top-template::-webkit-scrollbar {
     width: 0px;
-    display: none;
 }
-  
-  /* .screen::-webkit-scrollbar-thumb {
-    background-color: #888;
-}
-  
-  .screen::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
-} */
 
 /* * Screen CSS*/
 
@@ -54,21 +62,24 @@ body {
 /* ! navbar CSS */
 
 .navbar {
-    position: fixed;
-    width:inherit ;
-    top: 93vh;
+    position: relative;
+    width:100%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border-top: 1px solid #d1d1d1;
-    border-radius: 10px;
+    border-top: 1px solid #e7e7e7;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.navbar i, .likes_and_messages i {
+/* * common icons sizing */
+.navbar i, .likes_and_messages i, .reaction-block i, .user i{
     font-size: 25px;
-    margin: .2em;
-    z-index: 1000;
+    margin: .5em;
+    cursor: pointer;
 }
 
 /* ! navbar CSS */
@@ -85,17 +96,18 @@ body {
     justify-content: center;
     overflow-x: auto;
     align-items: center;
-    margin: 10px;
     margin-bottom: 0;
+    background-color: #fff;
 }
 
 .logo {
     font-family: 'Dancing Script', cursive;
     font-size: 1.8rem;
-    margin: 7px;
+    margin:10px;
 }
 
 .likes_and_messages {
+    margin:10px;
     margin-left: auto;
 }
 
@@ -110,10 +122,9 @@ body {
 .stories-bar{
     display: flex;
     overflow: scroll;
-    gap:15px;;
+    gap:.2rem;;
 }
 .stories-bar .story{
-    /* border:1px solid red; */
     display: flex;
     flex-direction: column;
 }
@@ -123,6 +134,7 @@ body {
 }
 .story{
     align-items: center;
+    cursor: pointer;
 }
 
 .story-profile-name{
