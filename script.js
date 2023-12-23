@@ -190,14 +190,14 @@ posts.map(post => {
                             </div>
 
                             <div class="reaction-info">
-                                <button class="view-likes-btn">${post.likes} likes</button>
+                                <button class="view-likes-btn">${post.likes.toLocaleString('en-IN')} likes</button>
                                 <div class="caption">
                                     <p><b>${post.user.name}</b> ${post.caption} </p>
                                 </div>
 
                                 <p class="hashtags">${post.hashtags}</p>
 
-                                <button class="view-comments-btn">view all ${post.comments} comments</button>
+                                <button class="view-comments-btn">view all ${post.comments.toLocaleString('en-IN')} comments</button>
                             </div>
                         </div>`
     postElementList.push(postElement);
