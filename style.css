@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+
+
+
+/* * Screen CSS*/
+
+.screen {
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+    border-radius: 10px;
+    width: 35vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden ;
+}
+
+.screen::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+}
+  
+  /* .screen::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+  
+  .screen::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+} */
+
+/* * Screen CSS*/
+
+
+
+
+/* ! navbar CSS */
+
+.navbar {
+    position: fixed;
+    width:inherit ;
+    top: 93vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #d1d1d1;
+    border-radius: 10px;
+}
+
+.navbar i, .likes_and_messages i {
+    font-size: 25px;
+    margin: .2em;
+    z-index: 1000;
+}
+
+/* ! navbar CSS */
+
+
+
+
+
+/* ^ top nav-bar CSS*/
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x: auto;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    margin: 7px;
+}
+
+.likes_and_messages {
+    margin-left: auto;
+}
+
+/* ^ top nav-bar CSS*/
+
+
+
+
+
+/* & stories section */
+
+.stories-bar{
+    display: flex;
+    overflow: scroll;
+    gap:15px;;
+}
+.stories-bar .story{
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+.stories-bar::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+}
+.story{
+    align-items: center;
+}
+
+.story-profile-name{
+    margin-top: 0;
+    color: #565656;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.story-profile-img{
+    margin: 10px;
+    margin-bottom: 0;
+    border: 2.5px solid #e483a3;
+    border-radius: 50%;
+    padding: .2em;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* & stories section */
+
+
