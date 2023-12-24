@@ -122,7 +122,8 @@ body {
 .stories-bar{
     display: flex;
     overflow: scroll;
-    gap:.2rem;;
+    gap:.2rem;
+    margin-bottom: .5rem
 }
 .stories-bar .story{
     display: flex;

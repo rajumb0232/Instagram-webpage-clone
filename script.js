@@ -158,6 +158,7 @@ let postElementList = []
 
 posts.map(post => {
     let postElement = `<div class="post">
+                            
                             <div class="user">
                                 <div class="user-img">
                                     <img src="${post.user.image}" alt=""></img>
@@ -170,12 +171,13 @@ posts.map(post => {
                             </div>
 
                             <div class="media">
-                                <div class="heart"> <i class="ri-heart-3-fill pop-down"></i></div>
+                                <p hidden="true" id="post-id">${post.id}</p>
+                                <div class="heart"> <i class="ri-heart-3-fill pop-down middle-heart"></i></div>
                                 <div class="media-img"> <img src="${post.image}" alt=""></div>
                             </div>
 
                             <div class="reaction-block">
-                                <i class="ri-heart-3-line"></i>
+                                <i class="ri-heart-3-line like"></i>
                                 <i class="ri-chat-3-line"></i>
                                 <i class="ri-send-plane-fill"></i>
                                 <div class="bookmark">
@@ -197,7 +199,7 @@ posts.map(post => {
     postElementList.push(postElement);
 });
 
-postsElement.innerHTML = postElementList.slice(",");
+postsElement.innerHTML = postElementList.join('');
 
 
 
@@ -206,16 +208,36 @@ postsElement.innerHTML = postElementList.slice(",");
 // like function
 
 let medias = document.getElementsByClassName("media");
-console.log(medias);
 
 Array.from(medias).forEach(media => {
     media.classList.add("heart-and-continer")
 
     media.addEventListener("dblclick", () => {
-        let i = media.getElementsByClassName("ri-heart-3-fill")[0];
-
-        i.classList.remove("pop-down")
+        let i = media.getElementsByClassName("pop-down")[0];
+        
         i.classList.add("pop-up");
+        i.classList.remove("pop-down")
+
+        // counting the likes
+        posts.forEach(post => {
+            let triggeredPostElement = media.parentElement; // picking the parent element of triggered media
+
+            let triggeredPostId = Number.parseInt(media.querySelector("#post-id").innerHTML)
+            
+            if(post.id == triggeredPostId){ 
+
+                post.likes += 1; // increasing the like count
+                // have to write logic to not increase like count for more than once.
+                let heartIcon = triggeredPostElement.querySelector(".like");
+                console.log(heartIcon)
+                heartIcon.classList.add("liked"); // adding red colour
+                heartIcon.classList.remove("ri-heart-3-line"); // removing bordered heart icon
+                heartIcon.classList.add("ri-heart-3-fill"); // adding filled heard icon
+
+                triggeredPostElement.querySelector(".view-likes-btn").innerHTML = `${post.likes.toLocaleString('en-IN')} likes`
+
+            }
+        } )
 
         setTimeout(() => {
         i.classList.remove("pop-up")
