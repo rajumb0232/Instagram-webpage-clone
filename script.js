@@ -41,7 +41,7 @@ let posts=[
         "caption":"so cute..! 🥹❤️...",
         "hashtags":"#cute #cows #farmLife",
         "likes" : 2420098,
-        "comments":32,
+        "comments":32711,
         "user":{
             "name":"tevin_trinh",
             "image":"https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -53,7 +53,7 @@ let posts=[
         "caption":"Magestic 👑🐦🤍...",
         "hashtags":"#BirdsOfIndia #Birds #birdsPhotography #Photography #motherNature",
         "likes" : 953783,
-        "comments":987,
+        "comments":2987,
         "user":{
             "name":"Nayan_Sharma",
             "image":"https://images.unsplash.com/photo-1526313199968-70e399ffe791?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -113,7 +113,7 @@ let posts=[
         "caption":"Sunset",
         "hashtags":"#city #evening #photography #sunsetPhotography #city #sky #skyScrappers",
         "likes" : 7845,
-        "comments":139,
+        "comments":901,
         "user":{
             "name":"photo.dump",
             "image":"https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=3764&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
