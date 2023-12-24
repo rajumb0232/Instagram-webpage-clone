@@ -1,14 +1,26 @@
 let posts=[
     {
-        "id":1,
-        "image":"https://images.unsplash.com/photo-1495211895963-08d8812dcbf0?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "caption":"Stepping into the future, but my best life stays in every footprint. ⚡🚀",
-        "hashtags":"#life #positivity #goals",
-        "likes" : 1547,
-        "comments":300,
+        "id":6,
+        "image":"https://images.unsplash.com/photo-1489440543286-a69330151c0b?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "caption":"There are places that never get bored and there are companies as well... ",
+        "hashtags":"#DogForLife #dog #MyLife #nature #travel",
+        "likes" : 25494,
+        "comments":476,
         "user":{
-            "name":"Jakob_Owens",
-            "image":"https://images.unsplash.com/photo-1579540252588-da0ee883560d?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "name":"Aron_Wu",
+            "image":"https://images.unsplash.com/photo-1470675088316-e747a6f3c879?q=80&w=3874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    },
+    {
+        "id":1,
+        "image":"https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "caption":"When you have to take off from a high point, always get used to height and then plan to fly! 🍃",
+        "hashtags":"#nature #green #Photography #NaturePhotography #lens #lifeThroughLens",
+        "likes" : 42949,
+        "comments":507,
+        "user":{
+            "name":"Simon_Reza",
+            "image":"https://images.unsplash.com/profile-1695394970564-c78b5aaff4b5image?bg=fff&crop=faces&dpr=2&h=150&w=150&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
         }
     },
     {
@@ -25,14 +37,14 @@ let posts=[
     },
     {
         "id":3,
-        "image":"https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "caption":"When you have to take off from a high point, always get used to height and then plan to fly! 🍃",
-        "hashtags":"#nature #green #Photography #NaturePhotography #lens #lifeThroughLens",
-        "likes" : 42949,
-        "comments":507,
+        "image":"https://images.unsplash.com/photo-1495211895963-08d8812dcbf0?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "caption":"Stepping into the future, but my best life stays in every footprint. ⚡🚀",
+        "hashtags":"#life #positivity #goals",
+        "likes" : 1547,
+        "comments":300,
         "user":{
-            "name":"Simon_Reza",
-            "image":"https://images.unsplash.com/profile-1695394970564-c78b5aaff4b5image?bg=fff&crop=faces&dpr=2&h=150&w=150&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+            "name":"Jakob_Owens",
+            "image":"https://images.unsplash.com/photo-1579540252588-da0ee883560d?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
     },
     {
@@ -59,18 +71,7 @@ let posts=[
             "image":"https://images.unsplash.com/photo-1526313199968-70e399ffe791?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
     },
-    {
-        "id":6,
-        "image":"https://images.unsplash.com/photo-1489440543286-a69330151c0b?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "caption":"There are places that never get bored and there are companies as well... ",
-        "hashtags":"#DogForLife #dog #MyLife #nature #travel",
-        "likes" : 25494,
-        "comments":476,
-        "user":{
-            "name":"Aron_Wu",
-            "image":"https://images.unsplash.com/photo-1470675088316-e747a6f3c879?q=80&w=3874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        }
-    },
+  
     {
         "id":7,
         "image":"https://images.unsplash.com/photo-1508179640279-deaa2ea35e82?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -122,6 +123,8 @@ let posts=[
 ]   
 
 
+// stories
+
 let storyBar = document.querySelector(".stories-bar");
 
 let stories = [];
@@ -146,19 +149,9 @@ posts.forEach(post => {
 
   });
 
-// let story=document.querySelector(".story")
-// posts.map((e)=>{
-//     console.log(e)
-//     story.innerHTML=`<img ${e.image}>`
-// })
 
 
-
-
-
-
-let userImage = document.querySelector(".user-img") // should insert user profile image  
-let userInfo = document.querySelector(".user-info") // should add two div's .user-name and .user-loc
+// posts 
 
 let postsElement = document.querySelector(".posts")
 let postElementList = []
@@ -177,7 +170,8 @@ posts.map(post => {
                             </div>
 
                             <div class="media">
-                                <img src="${post.image}" alt="">
+                                <div class="heart"> <i class="ri-heart-3-fill pop-down"></i></div>
+                                <div class="media-img"> <img src="${post.image}" alt=""></div>
                             </div>
 
                             <div class="reaction-block">
@@ -203,4 +197,30 @@ posts.map(post => {
     postElementList.push(postElement);
 });
 
-postsElement.innerHTML = postElementList.slice(",")
+postsElement.innerHTML = postElementList.slice(",");
+
+
+
+
+
+// like function
+
+let medias = document.getElementsByClassName("media");
+console.log(medias);
+
+Array.from(medias).forEach(media => {
+    media.classList.add("heart-and-continer")
+
+    media.addEventListener("dblclick", () => {
+        let i = media.getElementsByClassName("ri-heart-3-fill")[0];
+
+        i.classList.remove("pop-down")
+        i.classList.add("pop-up");
+
+        setTimeout(() => {
+        i.classList.remove("pop-up")
+        i.classList.add("pop-down");
+        }, 500)
+
+    })
+})

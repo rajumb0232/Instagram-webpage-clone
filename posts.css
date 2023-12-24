@@ -37,6 +37,10 @@
     padding: .075em;
     border: 2px solid  #e483a3;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+
 }
 
 .user-info{
@@ -68,16 +72,57 @@
 
 .media{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-}
-
-.media img {
-    margin: .2em;
-}
-
-.media, .media img{
     width: 100%;
+    position: relative;
+}
+.heart, .media-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 0;
+    height: 50vh;
+}
+.heart{
+    z-index: 2;
+}
+
+.media-img{
+    margin-top: -50vh;
+    z-index: 1;
+}
+
+.ri-heart-3-fill {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5rem;
+    border: 2ps solid red;
+    transition: all ease 100ms;
+}
+
+.pop-up{
+    transform: scale(1);
+    opacity: 0.75;
+}
+
+.pop-down{
+    transform: translateY(10px) scale(.25);
+    opacity: 0;
+}
+
+.media-img img, .heart i {
+    width: 100%;
+    height: 100%;
+}
+
+.media-img img{
+    object-fit: cover;
+    object-position: center;
 }
 
 /* ? Media CSS */
