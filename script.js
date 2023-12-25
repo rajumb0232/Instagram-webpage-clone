@@ -224,18 +224,19 @@ Array.from(medias).forEach(media => {
 
             let triggeredPostId = Number.parseInt(media.querySelector("#post-id").innerHTML)
             
-            if(post.id == triggeredPostId){ 
-
-                post.likes += 1; // increasing the like count
-                // have to write logic to not increase like count for more than once.
+            if(post.id == triggeredPostId){ // validating to select event triggered post Id
                 let heartIcon = triggeredPostElement.querySelector(".like");
-                console.log(heartIcon)
-                heartIcon.classList.add("liked"); // adding red colour
-                heartIcon.classList.remove("ri-heart-3-line"); // removing bordered heart icon
-                heartIcon.classList.add("ri-heart-3-fill"); // adding filled heard icon
 
-                triggeredPostElement.querySelector(".view-likes-btn").innerHTML = `${post.likes.toLocaleString('en-IN')} likes`
+                 // validating if the post is already liked or not
+                if(heartIcon.classList.contains("ri-heart-3-line")){
+                    post.likes += 1; // increasing the like count
+                    
+                    heartIcon.classList.add("liked"); // adding red colour
+                    heartIcon.classList.remove("ri-heart-3-line"); // removing bordered heart icon
+                    heartIcon.classList.add("ri-heart-3-fill"); // adding filled heard icon
 
+                    triggeredPostElement.querySelector(".view-likes-btn").innerHTML = `${post.likes.toLocaleString('en-IN')} likes`
+                }
             }
         } )
 
