@@ -8,6 +8,7 @@
 html, body {
     width: 100vw;
     height: 100vh;
+    cursor: none;
 }
 
 body {
@@ -18,7 +19,24 @@ body {
     overflow: hidden;
 }
 
+/* & cursor CSS */
 
+.cursor{
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: #565656;
+    opacity: 0.9;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+    mix-blend-mode: difference;
+    border: .3em solid #ffffffd0;
+    transition: all ease 50ms;
+    /* transition: visibility ease-in-out 2000ms; */
+    visibility: hidden;
+}
+
+/* & cursor CSS */
 
 
 /* * Screen CSS*/
@@ -81,7 +99,6 @@ body {
 .navbar i, .likes_and_messages i, .reaction-block i, .user i{
     font-size: 25px;
     margin: .5em;
-    cursor: pointer;
 }
 
 /* ! navbar CSS */
@@ -137,7 +154,6 @@ body {
 }
 .story{
     align-items: center;
-    cursor: pointer;
 }
 
 .story-profile-name{

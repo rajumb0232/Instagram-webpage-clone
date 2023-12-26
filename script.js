@@ -247,3 +247,23 @@ Array.from(medias).forEach(media => {
 
     })
 })
+
+
+// Cursor
+
+let customCursor = document.querySelector(".cursor");
+let outerBody = document.querySelector("body");
+let screen = document.querySelector(".top-template")
+
+outerBody.addEventListener("mousemove", (position) => {
+    customCursor.style.left = position.x + "px"
+    customCursor.style.top = position.y + "px"
+    setTimeout(() => {
+         customCursor.style.visibility = "hidden";
+    }, 100);
+   
+})
+
+screen.addEventListener("mousemove", position => {
+    customCursor.style.visibility = "visible";
+})
